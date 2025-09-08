@@ -28,7 +28,7 @@ header{font-family: "Orbitron", sans-serif;
   background-image:url(../images/photo/PXL_20250604_003023104.MP.JPG);
   background-repeat:no-repeat;
   background-position: center;
-  background-size:cover;
+  background-size:contain;
   height: 100vh;
 
   display: flex;
@@ -71,4 +71,12 @@ header nav a {
 
 header nav a:hover {
   color: cyan; /* ホバーで光らせる */
+}
+
+.photo01 img,
+.photo02 img {
+  width: 100%;      /* 親要素の幅いっぱいに広げる */
+  height: auto;     /* 縦横比はそのまま */
+  display: block;   /* 改行扱いにして下に並ぶ */
+  margin: 0 0 16px; /* 下に余白をつける（お好みで調整） */
 }
